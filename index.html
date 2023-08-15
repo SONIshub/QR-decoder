@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  <title>QR Decoder</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="section">
+      <div class="top_navbar">
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+       
+        <h3 style="text-align: center;width: 100%; color: white;">QR code Scanner And Generator</h3>
+      </div>
+      <div class="container">
+
+        <div class="showScanData" id="showData">
+          
+        </div>
+        <div id="videoContainer" class="video-containe">
+          <video id="scanner"></video></div>
+        <div class="overlay"><img id="overlay" src="scan.png" />
+          
+          <div class="diode">
+            <div class="laser"></div>
+          </div>
+        </div>
+
+        
+        <!-- <div id="geeks" class="geeks"></div> -->
+        <div id="genratorBox">
+          <!-- <div class="page1">
+                    <p><span style="font-weight: bold;">-:Enter Your URL Here:-</span></p>
+                    <input type="text" id="screen" maxlength="50" placeholder="Enter your URL here...">
+                    <div class="qrImg">
+                        <img id="qrImage" src=""/>
+                    </div>
+                    <h4 id="text"></h4>
+                    <button  id="btn" class="btn">Generate</button>
+                </div>  -->
+        </div>
+        <div id="showAbout"></div>
+      </div>
+      
+    </div>
+   
+    <div class="sidebar">
+     
+      <div class="profile">
+        <img src="favicon.png" alt="">
+        <h3>QR Decoder</h3>
+      </div>
+      <div class="aboutPage">
+        <p>QR Code</p>
+       </div>
+      <ul>
+        <li>
+          <a href="#" id="generateBtn">
+            <span class="icon"></span>
+            <span class="item">QR code Generate</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="scannerBtn">
+            <span class="icon"></span>
+            <span class="item">QR code Scanner</span>
+          </a>
+        </li>
+
+      </ul>
+      
+       </div>
+    </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+  <script src="index.js"></script>
+</body>
+
+</html>
